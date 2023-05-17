@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width = '600' height="400"></canvas>
+    <script>
+        var canvas = document.querySelector('canvas')
+        var context = canvas.getContext('2d')
+        var posicionx = 10
+        var posiciony = 10
+        var aumentox=0
+        
+        context.fillStyle = 'lightgray'
+        context.fillRect(0,0,600,400)
+
+        function dibujarCirculo(radio){
+            context.fillStyle = 'blue'
+            context.beginPath()
+            context.arc(posicionx,posiciony,radio,0,2*Math.PI)
+            context.fill()
+            console.log({posicionx},{posiciony},radio)
+            posicionx += aumentox
+            if (posicionx==580) {
+                aumentox = -10
+            }
+            if(posicionx==10) aumentox = 10
+            
+        }
+
+
+        function limpiarPantalla(){
+            context.clearRect(0,0,600,400)
+        }
+        function actualizarPantalla(){
+            limpiarPantalla()
+            dibujarCirculo(5)
+            
+        }
+        setInterval(actualizarPantalla, 50);
+    </script>
+</body>
+</html>

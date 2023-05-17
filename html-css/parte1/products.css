@@ -1,0 +1,100 @@
+header{
+    background-color: #bbb;
+}
+
+.nav{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    height: 60px;
+    width: 50px;
+}
+nav {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.products {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 460px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    
+}
+
+.products li:hover{
+    border-color: #c78c19;
+    box-shadow: 5px 10px 20px #837b7b;
+
+}
+
+.products li:hover h2{
+    font-size: 33px;
+}
+
+.products li:active{
+    border-color: #11ca2a;
+}
+
+.products h2{
+    font-size: 30px;
+    font-weight: bold;
+    transition: font-size 0.1s;
+}
+
+
+.description{
+    font-size: 18px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyrigth{
+    color: aliceblue;
+    font-size: 13px;
+    margin: 20px;
+}
