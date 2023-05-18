@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "./reset.css">
+    <link rel = "stylesheet" href = "./style.css"> 
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img class = "logo" src="./imagenes/logo.png" alt="Logo Barberia">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Inicio</a></a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href = "#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="" id="nombre" required>
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email" required placeholder="email@dominio.com">
+            <label for="telefono">Telefono</label>
+            <input type = "tel" id = "telefono" required placeholder="(***) **** ****">
+            <label for="descripcion">Mensaje</label>
+            <textarea name="descripcion" id="descripcion" cols="90" rows="15" required></textarea>
+
+            <fieldset>
+                <legend>Como le gustaria contactarlo</legend>
+                <label for = "radio-tel"><input id = "radio-tel" type = "radio" value="telefono" name="radio">Telefono</label>
+                
+                <label for = "radio-email"><input id = "radio-email" type = "radio" value="radio"  name="radio">Email</label>
+                
+                <label for = "radio-wh"><input id = "radio-wh" type = "radio" value="whatsapp"  name="radio" checked>Whatsapp</label>
+                
+            </fieldset>
+            <div>
+                <select name="hour" id="hour">
+                    <option>Maniana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </div>
+           
+
+            <label class="lcheck" for="recibir"><input checked type="checkbox" name="recibir" id="recibir">Le gustaria recibir novedades por correo electronico</label>
+            <input type = "submit" value="Enviar" class="btn">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td> 08:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00 - 20:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo barberia">
+        <p class="copyrigth">&copy Copyrigth - 2023</p>
+    </footer>
+</body>
+</html>
